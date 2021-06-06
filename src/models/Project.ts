@@ -1,3 +1,5 @@
+/// <reference path="../enums/ProjectStatus.ts" />
+
 namespace App {
   export class Project {
     constructor(
