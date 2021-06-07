@@ -1,4 +1,4 @@
-import { ProjectStatus } from '../enums/ProjectStatus.js';
+import { ProjectStatus } from '../enums/ProjectStatus';
 
 export class Project {
   constructor(
