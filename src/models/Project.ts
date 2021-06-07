@@ -1,13 +1,11 @@
-/// <reference path="../enums/ProjectStatus.ts" />
+import { ProjectStatus } from '../enums/ProjectStatus.js';
 
-namespace App {
-  export class Project {
-    constructor(
-      public id: string,
-      public title: string,
-      public description: string,
-      public people: number,
-      public status: ProjectStatus
-    ) { }
-  }
+export class Project {
+  constructor(
+    public id: string,
+    public title: string,
+    public description: string,
+    public people: number,
+    public status: ProjectStatus
+  ) { }
 }
