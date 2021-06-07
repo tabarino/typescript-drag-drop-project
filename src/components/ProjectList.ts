@@ -1,4 +1,4 @@
-import { Component } from './Component.js';
+import MyComponent from './Component.js';
 import { ProjectItem } from './ProjectItem.js';
 import { Project } from '../models/Project.js';
 import { DragTarget } from '../interfaces/DragTarget.js';
@@ -6,7 +6,7 @@ import { Autobind } from '../decorators/Autobind.js';
 import { projectState } from '../state/ProjectState.js';
 import { ProjectStatus } from '../enums/ProjectStatus.js';
 
-export class ProjectList extends Component<HTMLDivElement, HTMLElement> implements DragTarget {
+export class ProjectList extends MyComponent<HTMLDivElement, HTMLElement> implements DragTarget {
   assignedProjects: Project[] = [];
 
   constructor(private type: 'active' | 'finished') {
